@@ -1,0 +1,11 @@
+.c-card {
+    padding: $baseline-x5;
+    background: rgba($color-white, 0.8);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 $color-black;
+    }
+    
+    .c-card--light {
+        background-color: rgba($color-white, 0.5);
+    }
+    

@@ -1,0 +1,17 @@
+// Color Settings
+$color-black:#0d2a4a;
+$color-blue:#38B2FF;
+$color-purple:#7070d5;
+$color-red:#fc4a33;
+$color-grey:#a3adbf;
+$color-grey-light:#f5f5f7;
+$color-white:#ffffff;
+
+$colors: (
+    'black': $color-black,
+    'purple': $color-purple,
+    'red': $color-red,
+    'grey': $color-grey,
+    'grey-light': $color-grey-light,
+    'white': $color-white,
+);

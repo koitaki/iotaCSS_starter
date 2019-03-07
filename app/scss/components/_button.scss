@@ -1,0 +1,68 @@
+// Button Component
+
+$button-padding: $baseline-x2 $baseline-x3;
+$button-bgcolor: $color-blue;
+$button-bgcolor-hover: darken($button-bgcolor, 10%);
+$button-bgcolor-active: darken($button-bgcolor, 20%);
+$button-color: $color-white;
+$button-radius: 3px;
+$duration: 0.3s;
+
+$button-outline-padding: ($baseline-x2 - 2) ($baseline-x3 - 2);
+$button-outline-bgcolor: transparent;
+$button-outline-color: $button-bgcolor;
+$button-outline-color-hover: darken($button-bgcolor, 10%);
+$button-outline-color-active: darken($button-bgcolor, 20%);
+// $button-outline-bgcolor-active: lighten($color-grey,25%);
+$button-outline-bgcolor-active: darken($color-white,10%);
+
+.c-button {
+    padding: $button-padding;
+    display: inline-block;
+    font: inherit;
+    color: $button-color;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-color: $button-bgcolor;
+    border-radius: $button-radius;
+    -webkit-transition-duration: $duration; /* Safari */
+    transition-duration: $duration;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2)
+}
+
+.c-button:hover {
+    background-color: $button-bgcolor-hover;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+}
+
+.c-button:active {
+    background-color: $button-bgcolor-active;
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+}
+
+.c-button--outline {
+    padding: $button-outline-padding;
+    color: $button-outline-color;
+    border: 1px solid $button-outline-color;
+    background-color: $button-outline-bgcolor;
+    -webkit-transition-duration: $duration; /* Safari */
+    transition-duration: $duration;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2)
+}
+
+.c-button--outline:hover {
+    color: $button-outline-color-hover;
+    border-color: $button-outline-color-hover;
+    background-color: $button-outline-bgcolor;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+}
+
+.c-button--outline:active {
+    background-color: $button-outline-bgcolor-active;
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+}
+

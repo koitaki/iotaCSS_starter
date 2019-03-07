@@ -1,0 +1,29 @@
+/**
+ * Weight sizes
+ *
+ * Type: Map
+ */
+
+$iota-utils-weight-sizes: (
+    thin: 100,
+    extra-light: 200,
+    light: 300,
+    normal: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+    extra-bold: 800,
+    black: 900, 
+);
+
+
+/**
+ * Namespace classes
+ *
+ * Type: String
+ */
+
+$iota-utils-weight-namespace: 'weight-';
+
+
+@import '../../../node_modules/iotacss/utilities/weight';
